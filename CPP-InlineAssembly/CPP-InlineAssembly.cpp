@@ -85,6 +85,8 @@ void InlineAssembly() {
 
      cout << "Sum is: " << sum << endl;
      cout << "Are a and b equal? " << (isEqual ? "Yes" : "No") << endl;
+
+     cout << "1 last change";
 }
 
 
