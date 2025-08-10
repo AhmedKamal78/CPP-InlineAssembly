@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Libraries\ConsoleUtils</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,7 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Libraries\ConsoleUtils\ConsoleUtils.vcxproj">
-      <Project>{75b0d8da-70ba-479e-9f3f-ae9fa80d4df0}</Project>
+      <Project>{5177ff91-36e4-4397-a349-40ca7a647896}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

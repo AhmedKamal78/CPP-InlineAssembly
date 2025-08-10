@@ -54,25 +54,25 @@ void InlineAssembly() {
      int sum = 0;
      int isEqual = 0;  // Will be set to 1 if a == b
 
-    //__asm {
-    //    mov eax, a;        // Load variable 'a' into EAX
-    //    mov ebx, b;        // Load variable 'b' into EBX
-    //    add eax, ebx;      // Add EAX and EBX, result in EAX
-    //    mov sum, eax;      // Store result from EAX into C++ variable 'sum'
+    __asm {
+        mov eax, a;        // Load variable 'a' into EAX
+        mov ebx, b;        // Load variable 'b' into EBX
+        add eax, ebx;      // Add EAX and EBX, result in EAX
+        mov sum, eax;      // Store result from EAX into C++ variable 'sum'
 
-    //    mov eax, a;        // Reload 'a' into EAX for comparison
-    //    cmp eax, ebx;      // Compare EAX with EBX (sets flags)
-    //    je equalLabel;     // Jump to label if equal (ZF = 1)
+        mov eax, a;        // Reload 'a' into EAX for comparison
+        cmp eax, ebx;      // Compare EAX with EBX (sets flags)
+        //je equalLabel;     // Jump to label if equal (ZF = 1)
 
-    //    xor bx, bx;        // Clear BX register (16-bit version of EBX)
-    //    mov bx, b;         // Load lower 16 bits of 'b' into BX (demonstration)
+        //xor bx, bx;        // Clear BX register (16-bit version of EBX)
+        //mov bx, b;         // Load lower 16 bits of 'b' into BX (demonstration)
     //    jmp doneLabel;     // Skip the 'equal' label if not equal
 
     //equalLabel:
     //    mov isEqual, 1;    // Set flag in C++ variable if a == b
 
     //doneLabel:
-    //}
+    }
 
      cout << "Sum is: " << sum << endl;
      cout << "Are a and b equal? " << (isEqual ? "Yes" : "No") << endl;
