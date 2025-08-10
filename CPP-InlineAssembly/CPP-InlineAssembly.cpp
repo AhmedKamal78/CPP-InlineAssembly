@@ -119,7 +119,7 @@ int main(int argc, char* argv[])
 	utils.showCredits();
 
 	system("pause");
-	// this is a better way to avoid unnec instructions when debugger finishes
+	// this is a better way to avoid unnecessary instructions when debugger finishes
 	// we also select this option ==> Tools->Options->Debugging->Automatically close the console when debugging stops.
 
 	//--- exit console
