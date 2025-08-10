@@ -64,6 +64,15 @@ void InlineAssembly() {
         cmp eax, ebx;      // Compare EAX with EBX (sets flags)
         //je equalLabel;     // Jump to label if equal (ZF = 1)
 
+        xor bx, bx;        // Clear BX register (16-bit version of EBX)
+        
+        //--- following line has error
+        //mov bx, b;       // Load lower 16 bits of 'b' into BX (demonstration)
+        // 
+        //--- way around to fix error
+        mov eax, b;        // load full 32 - bit 'b' into eax
+        mov bx, ax;        // move lower 16 bits of eax into bx
+
         //xor bx, bx;        // Clear BX register (16-bit version of EBX)
         //mov bx, b;         // Load lower 16 bits of 'b' into BX (demonstration)
     //    jmp doneLabel;     // Skip the 'equal' label if not equal
