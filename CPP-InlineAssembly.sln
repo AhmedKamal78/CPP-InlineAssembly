@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleAppTemplate", "ConsoleAppTemplate\ConsoleAppTemplate.vcxproj", "{F5AB3FE7-011C-4BBC-81F5-9675577BE7C8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPP-InlineAssembly", "CPP-InlineAssembly\CPP-InlineAssembly.vcxproj", "{F5AB3FE7-011C-4BBC-81F5-9675577BE7C8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleUtils", "..\Libraries\ConsoleUtils\ConsoleUtils.vcxproj", "{75B0D8DA-70BA-479E-9F3F-AE9FA80D4DF0}"
 EndProject

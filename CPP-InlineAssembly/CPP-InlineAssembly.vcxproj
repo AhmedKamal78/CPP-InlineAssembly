@@ -22,7 +22,7 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{f5ab3fe7-011c-4bbc-81f5-9675577be7c8}</ProjectGuid>
-    <RootNamespace>ConsoleAppTemplate</RootNamespace>
+    <RootNamespace>CPP-InlineAssembly</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -124,7 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleAppTemplate.cpp" />
+    <ClCompile Include="CPP-InlineAssembly.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Libraries\ConsoleUtils\ConsoleUtils.vcxproj">
