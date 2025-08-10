@@ -62,7 +62,7 @@ void InlineAssembly() {
 
         mov eax, a;        // Reload 'a' into EAX for comparison
         cmp eax, ebx;      // Compare EAX with EBX (sets flags)
-        //je equalLabel;     // Jump to label if equal (ZF = 1)
+        je equalLabel;     // Jump to label if equal (ZF = 1)
 
         xor bx, bx;        // Clear BX register (16-bit version of EBX)
         
@@ -73,14 +73,12 @@ void InlineAssembly() {
         mov eax, b;        // load full 32 - bit 'b' into eax
         mov bx, ax;        // move lower 16 bits of eax into bx
 
-        //xor bx, bx;        // Clear BX register (16-bit version of EBX)
-        //mov bx, b;         // Load lower 16 bits of 'b' into BX (demonstration)
-    //    jmp doneLabel;     // Skip the 'equal' label if not equal
+        jmp doneLabel;     // Skip the 'equal' label if not equal
 
-    //equalLabel:
-    //    mov isEqual, 1;    // Set flag in C++ variable if a == b
+    equalLabel:
+        mov isEqual, 1;    // Set flag in C++ variable if a == b
 
-    //doneLabel:
+    doneLabel:
     }
 
      cout << "Sum is: " << sum << endl;
